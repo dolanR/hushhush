@@ -49,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html className='bg-neutral-900 scroll-smooth'>
       <body>{children}</body>
     </html>
   );
