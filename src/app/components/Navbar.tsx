@@ -1,15 +1,29 @@
 export default function Navbar() {
+  const navItems = ['ABOUT', 'MERCH', 'MUSIC', 'TOUR', 'SIGN-UP'];
   return (
-    <nav className='bg-transparent shadow-lg absolute top-0 left-0 w-full h-[7%] pr-12'>
-      <div className='flex items-center justify-between text-white h-full'>
-        <div></div>
-        <ul className='flex items-center space-x-6'>
-          <li>
-            <a href='#'>Home</a>
-          </li>
-          <li>
-            <a href='#about'>About</a>
-          </li>
+    <nav className='bg-transparent absolute z-20 w-full p-6 hidden lg:block'>
+      <div className='flex items-center justify-center text-white h-full font-extrabold text-4xl tracking-tight'>
+        <ul className='flex items-center gap-6'>
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <a
+                className={`transition-all duration-300 ease-in-out
+                ${
+                  index % 2 == 0
+                    ? 'hh-purple font-outline-1'
+                    : 'text-black font-outline-2'
+                }`}
+                href={`${
+                  item == 'MERCH'
+                    ? 'https://hushhush.printify.me/products'
+                    : '#' + item.toLowerCase()
+                }`}
+                {...(item == 'MERCH' && { target: '_blank' })}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

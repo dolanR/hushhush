@@ -26,3 +26,18 @@
   --color-primary-900: rgb(var(--tw-color-primary-900)); /* #0c4a6e */
   /* #endregion  /**======== Primary Color =========== */
 }
+
+@layer base {
+  .font-outline-1 {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .font-outline-2 {
+    -webkit-text-stroke: 1px #28dae2;
+  }
+  .hh-purple {
+    color: #7c07a8;
+  }
+  .hh-blue {
+    color: #28dae2;
+  }
+}
