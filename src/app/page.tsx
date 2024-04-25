@@ -1,13 +1,14 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Head from 'next/head';
-import Image from 'next/image';
 import * as React from 'react';
 import '@/lib/env';
 
 import BurgerNav from '@/app/components/BurgerNav';
 import Hamburger from '@/app/components/Hamburger';
 import Navbar from '@/app/components/Navbar';
+import Socials from '@/app/components/Socials';
 
 /**
  * SVGR Support
@@ -19,15 +20,12 @@ import Navbar from '@/app/components/Navbar';
 
 export default function HomePage() {
   const [width, setWidth] = React.useState<number>(0);
-  const [height, setHeight] = React.useState<number>(0);
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     setWidth(window.innerWidth);
-    setHeight(window.innerHeight);
     window.addEventListener('resize', () => {
       setWidth(window.innerWidth);
-      setHeight(window.innerHeight);
     });
   }, []);
 
@@ -56,14 +54,19 @@ export default function HomePage() {
               : 'w-[100vw] top-[90%]'
           } z-10`}
         >
-          <Image
+          <motion.img
             src='/svg/hh-svg.svg'
             alt='Hush Hush'
-            width={width}
-            height={height}
+            initial={{
+              scale: 0,
+            }}
+            whileInView={{ scale: 1 }}
           />
         </div>
+        <Socials />
       </section>
+      <section className='h-screen' id='about'></section>
+      <section className='h-screen' id='merch'></section>
       <section className='h-screen' id='tour'></section>
     </main>
   );
