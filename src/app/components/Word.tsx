@@ -1,24 +1,17 @@
 import { motion, MotionValue, useScroll, useTransform } from 'framer-motion';
-import { RefObject, useRef } from 'react';
+import { useRef } from 'react';
 
-export default function Words({
-  value,
-  ref,
-}: {
-  value: string;
-  ref: RefObject<HTMLElement>;
-}) {
+export default function Words({ value }: { value: string }) {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    container: ref,
-    offset: ['start 0.9', 'start 0.05'],
+    offset: ['start 0.8', 'start 0.05'],
   });
 
   const words = value.split(' ');
   return (
     <p
-      className='font-5xl lg:max-w-[85%] md:max-w-[90%] max-w-[97%] p-12 text-white flex flex-wrap lg:text-5xl sm:text-3xl text-xl leading-tight  font-bold'
+      className='font-5xl lg:max-w-[85%] md:max-w-[90%] max-w-[97%] p-12 text-white flex flex-wrap xl:text-5xl lg:text-4xl sm:text-3xl text-lg leading-tight font-bold'
       ref={element}
     >
       {words.map((word, i) => {
