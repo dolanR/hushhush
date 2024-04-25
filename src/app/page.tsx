@@ -9,6 +9,7 @@ import BurgerNav from '@/app/components/BurgerNav';
 import Hamburger from '@/app/components/Hamburger';
 import Navbar from '@/app/components/Navbar';
 import Socials from '@/app/components/Socials';
+import Word from '@/app/components/Word';
 
 /**
  * SVGR Support
@@ -18,9 +19,13 @@ import Socials from '@/app/components/Socials';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 
+const bio =
+  'We are a 4-piece American Post hardcore band from Buffalo, NY, USA. Our band formed in 2022 from a collection of energetic, fun-loving dudes who met under the careful selection of frontman, Dominic Villa. Taking influences from bands such as Pierce the Veil, Escape the Fate, and old school pop punk bands, our unique brand of entertainment fuses catchy guitar rhythms and melodies with driving bass lines to create a post hardcore/pop punk fusion. We always strive to bring a high energy show that will make you want to bop around whilst singing along with every word.';
+
 export default function HomePage() {
   const [width, setWidth] = React.useState<number>(0);
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
+  const ref = React.useRef<HTMLElement>(null);
 
   React.useEffect(() => {
     setWidth(window.innerWidth);
@@ -56,7 +61,7 @@ export default function HomePage() {
         >
           <motion.img
             src='/svg/hh-svg.svg'
-            alt='Hush Hush'
+            alt='Hush Hush Logo'
             initial={{
               scale: 0,
             }}
@@ -65,8 +70,17 @@ export default function HomePage() {
         </div>
         <Socials />
       </section>
-      <section className='h-screen' id='about'></section>
-      <section className='h-screen' id='merch'></section>
+      <section
+        className='h-[200vh] flex justify-center items-center'
+        id='about'
+        ref={ref}
+      >
+        <video autoPlay muted loop className='fixed top-0 object-cover -z-50'>
+          <source src='/videos/hh-clip.mp4' type='video/mp4'></source>
+        </video>
+        <Word value={bio} ref={ref} />
+      </section>
+      <section className='h-screen bg-neutral-950' id='merch'></section>
       <section className='h-screen' id='tour'></section>
     </main>
   );
