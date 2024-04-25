@@ -7,6 +7,8 @@ export default function Navbar() {
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
+        transition={{ delay: 0.5 }}
+        viewport={{ once: true }}
         className='flex items-center justify-center text-white h-full font-extrabold text-4xl tracking-tight'
       >
         <ul className='flex items-center gap-6'>

@@ -14,6 +14,8 @@ export default function Socials() {
       className='lg:flex self-end w-full p-6 justify-center text-white items-center gap-6 z-10 hidden'
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
+      transition={{ delay: 0.5 }}
+      viewport={{ once: true }}
     >
       <a
         href='https://www.facebook.com/Hushhushtheband?mibextid=LQQJ4d'

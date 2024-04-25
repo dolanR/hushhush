@@ -46,6 +46,7 @@ export default function HomePage() {
             initial={{
               scale: 0,
             }}
+            viewport={{ once: true }}
             whileInView={{ scale: 1 }}
           />
         </div>
