@@ -22,12 +22,7 @@ export default function Navbar() {
                     ? 'hh-purple font-outline-1'
                     : 'text-black font-outline-2'
                 }`}
-                href={`${
-                  item == 'MERCH'
-                    ? 'https://hushhush.printify.me/products'
-                    : '#' + item.toLowerCase()
-                }`}
-                {...(item == 'MERCH' && { target: '_blank' })}
+                href={`#${item.toLowerCase()}`}
               >
                 {item}
               </a>
