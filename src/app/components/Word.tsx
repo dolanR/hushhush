@@ -5,13 +5,13 @@ export default function Words({ value }: { value: string }) {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ['start 0.8', 'start 0.22'],
+    offset: ['start 0.8', 'start 0.17'],
   });
 
   const words = value.split(' ');
   return (
     <p
-      className='font-5xl lg:max-w-[85%] md:max-w-[90%] max-w-[97%] p-12 text-white flex flex-wrap xl:text-5xl lg:text-4xl sm:text-3xl text-base leading-tight font-bold'
+      className='font-5xl lg:max-w-[85%] md:max-w-[90%] max-w-[97%] p-12 text-white flex flex-wrap xl:text-5xl lg:text-4xl sm:text-3xl text-base font-bold'
       ref={element}
     >
       {words.map((word, i) => {

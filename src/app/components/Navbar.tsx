@@ -18,11 +18,11 @@ export default function Navbar() {
               className='hover:scale-[1.5] transition-all duration-300 ease-in-out'
             >
               <a
-                className={`transition-all duration-300 ease-in-out hover:scale-[1.3]
+                className={`transition-all duration-200 ease-in-out hover:scale-[1.3]
                 ${
                   index % 2 == 0
-                    ? 'hh-purple font-outline-1'
-                    : 'text-black font-outline-2'
+                    ? 'hh-purple font-outline-1 hover:hh-purple-glow'
+                    : 'text-black font-outline-2 hover:hh-blue-glow'
                 }`}
                 href={`#${item.toLowerCase()}`}
               >

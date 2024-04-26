@@ -40,4 +40,12 @@
   .hh-blue {
     color: #28dae2;
   }
+  .hh-purple-glow {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7c07a8,
+      0 0 30px #7c07a8, 0 0 40px #7c07a8, 0 0 55px #7c07a8, 0 0 75px #7c07a8;
+  }
+  .hh-blue-glow {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #28dae2,
+      0 0 30px #28dae2, 0 0 40px #28dae2, 0 0 55px #28dae2, 0 0 75px #28dae2;
+  }
 }

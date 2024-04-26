@@ -28,13 +28,16 @@ export default function BurgerNav({
       <div className='flex items-center flex-col justify-center h-full text-white w-full font-extrabold font-sans'>
         <ul className='flex flex-col items-center text-center gap-3 w-full text-4xl sm:text-7xl justify-center'>
           {navItems.map((item, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className='transition-all duration-200 ease-in-out hover:scale-[1.2]'
+            >
               <a
                 className={`${
                   index % 2 == 0
-                    ? 'hh-purple font-outline-1'
-                    : 'text-black font-outline-2'
-                } transition-all duration-200 ease-in-out`}
+                    ? 'hh-purple font-outline-1 hover:hh-purple-glow'
+                    : 'text-black font-outline-2 hover:hh-blue-glow'
+                }`}
                 href={`#${item.toLowerCase()}`}
                 onClick={() => setIsOpen(false)}
               >
@@ -47,36 +50,42 @@ export default function BurgerNav({
           <a
             href='https://www.facebook.com/Hushhushtheband?mibextid=LQQJ4d'
             target='_blank'
+            className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
             <FaFacebookF className='text-3xl sm:text-5xl ' />
           </a>
           <a
             href='https://instagram.com/hush.hush.theband?igshid=NTc4MTIwNjQ2YQ=='
             target='_blank'
+            className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
             <FaInstagram className='text-3xl sm:text-5xl ' />
           </a>
           <a
             href='https://www.tiktok.com/@hushhush_pat?_t=8eHf1ijs0v0&_r=1'
             target='_blank'
+            className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
             <FaTiktok className='text-3xl sm:text-5xl  ' />
           </a>
           <a
             href='https://youtube.com/@hushhush-official4064?si=c_8cLLnoV4N6v9Hx'
             target='_blank'
+            className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
             <FaYoutube className='text-3xl sm:text-5xl ' />
           </a>
           <a
             href='https://open.spotify.com/artist/3rh7nDdkXZf4aUme3SKPNF?si=0ccqBQVeTGev1ATBq2q0FA&utm_medium=share&utm_source=linktree'
             target='_blank'
+            className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
             <FaSpotify className='text-3xl sm:text-5xl ' />
           </a>
           <a
             href='https://music.apple.com/us/artist/hush-hush/1614724552'
             target='_blank'
+            className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
             <FaMusic className='text-3xl sm:text-5xl ' />
           </a>

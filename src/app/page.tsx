@@ -5,12 +5,12 @@ import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
 
+import About from '@/app/components/About';
 import BurgerNav from '@/app/components/BurgerNav';
 import Hamburger from '@/app/components/Hamburger';
+import Merch from '@/app/components/Merch';
 import Navbar from '@/app/components/Navbar';
 import Socials from '@/app/components/Socials';
-import SoundButton from '@/app/components/SoundButton';
-import Word from '@/app/components/Word';
 
 /**
  * SVGR Support
@@ -20,15 +20,11 @@ import Word from '@/app/components/Word';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 
-const bio =
-  'We are a 4-piece American Post hardcore band from Buffalo, NY. Our band formed in 2022 from a collection of energetic, fun-loving dudes who met under the careful selection of frontman, Dominic Villa. Taking influences from bands such as Pierce the Veil, Escape the Fate, and old school pop punk bands, our unique brand of entertainment fuses catchy guitar rhythms and melodies with driving bass lines to create a post hardcore/pop punk fusion. We always strive to bring a high energy show that will make you want to bop around whilst singing along with every word.';
-
 export default function HomePage() {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
-  const [isMuted, setIsMuted] = React.useState<boolean>(true);
 
   return (
-    <main className={`${isOpen ? 'overflow-x-hidden' : ''}`}>
+    <main>
       <Head>
         <title>Hush Hush</title>
       </Head>
@@ -52,23 +48,10 @@ export default function HomePage() {
         </div>
         <Socials />
       </section>
-      <section
-        className='h-[200vh] flex justify-center items-center -z-20'
-        id='about'
-      >
-        <SoundButton isMuted={isMuted} setIsMuted={setIsMuted} />
-        <video
-          autoPlay
-          muted={isMuted}
-          loop
-          className='fixed top-0 object-cover h-screen w-[120vw] -z-50'
-        >
-          <source src='/videos/hh-clip.mp4' type='video/mp4'></source>
-        </video>
-        <Word value={bio} />
-      </section>
-      <section className='h-screen bg-neutral-950' id='merch'></section>
-      <section className='h-screen' id='tour'></section>
+      <About />
+      <Merch />
+      <section className='h-screen bg-neutral-900' id='tour'></section>
+      <section className='h-screen' id='sign-up'></section>
     </main>
   );
 }
