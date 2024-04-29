@@ -19,7 +19,7 @@ export default function Home() {
           whileInView={{ scale: 1 }}
         />
       </div>
-      <Socials />
+      <Socials className='pb-[125px]' />
     </section>
   );
 }

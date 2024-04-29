@@ -8,10 +8,10 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 
-export default function Socials() {
+export default function Socials({ className }: { className: string }) {
   return (
     <motion.div
-      className='lg:flex self-end lg:pb-[125px] xl:pb-[] w-full p-6 justify-center text-white items-center gap-6 z-10 hidden'
+      className={`lg:flex self-end xl:pb-[] w-full py-6 justify-center text-white items-center gap-6 z-10 hidden ${className}`}
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ delay: 0.5 }}
