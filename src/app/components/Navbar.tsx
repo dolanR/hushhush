@@ -14,8 +14,8 @@ export default function Navbar() {
         <ul className='flex items-center gap-6'>
           {navItems.map((item, index) => (
             <li
+              className='hover:scale-[1.5] transition-all duration-200 ease-in-out'
               key={index}
-              className='hover:scale-[1.5] transition-all duration-300 ease-in-out'
             >
               <a
                 className={`transition-all duration-200 ease-in-out hover:scale-[1.3]

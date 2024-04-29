@@ -5,7 +5,7 @@ export default function Words({ value }: { value: string }) {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ['start 0.8', 'start 0.17'],
+    offset: ['start 0.79', 'start 0.17'],
   });
 
   const words = value.split(' ');
@@ -14,6 +14,7 @@ export default function Words({ value }: { value: string }) {
       className='font-5xl lg:max-w-[85%] md:max-w-[90%] max-w-[97%] p-12 text-white flex flex-wrap xl:text-5xl lg:text-4xl sm:text-3xl text-base font-bold'
       ref={element}
     >
+      &emsp;
       {words.map((word, i) => {
         const start = i / words.length;
         const end = start + 1 / words.length;
@@ -38,9 +39,9 @@ const Word = ({
 }) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
-    <span className='mr-2 sm:mr-3'>
+    <span className='mr-2 box-border sm:mr-3'>
       <span className='absolute opacity-25'>{children}</span>
-      <motion.span style={{ opacity }} className='relative'>
+      <motion.span style={{ opacity }} className=''>
         {children}
       </motion.span>
     </span>

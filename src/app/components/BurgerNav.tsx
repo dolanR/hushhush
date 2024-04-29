@@ -18,15 +18,15 @@ export default function BurgerNav({
   const navItems = ['HOME', 'ABOUT', 'MERCH', 'MUSIC', 'TOUR', 'SIGN-UP'];
   return (
     <nav
-      className={`bg-neutral-950 fixed top-0 w-screen h-full z-40 transition-all duration-200 ${
+      className={`bg-neutral-950 fixed top-0 w-screen sm:w-1/2 md:w-[40%] h-full z-40 transition-all duration-200 ${
         isOpen ? 'right-0 opacity-1' : '-right-full opacity-0'
       }`}
     >
-      <div className='w-full h-1/2 -translate-y-[20%] absolute -z-10'>
+      <div className='w-full h-1/2 absolute -top-[12%] -z-10'>
         <Image src='/svg/hh-svg.svg' alt='Hush Hush' fill />
       </div>
       <div className='flex items-center flex-col justify-center h-full text-white w-full font-extrabold font-sans'>
-        <ul className='flex flex-col items-center text-center gap-3 w-full text-4xl sm:text-7xl justify-center'>
+        <ul className='flex flex-col items-center text-center gap-3 w-full text-4xl sm:text-5xl md:text-6xl  justify-center'>
           {navItems.map((item, index) => (
             <li
               key={index}
@@ -46,7 +46,7 @@ export default function BurgerNav({
             </li>
           ))}
         </ul>
-        <div className='flex items-center text-center justify-center gap-4 absolute top-[82%]'>
+        <div className='flex items-center text-center justify-center gap-5 absolute top-[87%]'>
           <a
             href='https://www.facebook.com/Hushhushtheband?mibextid=LQQJ4d'
             target='_blank'

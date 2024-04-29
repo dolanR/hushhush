@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@studio-freight/lenis':
+    specifier: ^1.0.42
+    version: 1.0.42
   clsx:
     specifier: ^2.0.0
     version: 2.1.0
@@ -2090,6 +2093,10 @@ packages:
     dependencies:
       '@sinonjs/commons': 1.8.6
     dev: true
+
+  /@studio-freight/lenis@1.0.42:
+    resolution: {integrity: sha512-HJAGf2DeM+BTvKzHv752z6Z7zy6bA643nZM7W88Ft9tnw2GsJSp6iJ+3cekjyMIWH+cloL2U9X82dKXgdU8kPg==}
+    dev: false
 
   /@svgr/babel-plugin-add-jsx-attribute@8.0.0(@babel/core@7.22.9):
     resolution: {integrity: sha512-b9MIk7yhdS1pMCZM8VeNfUlSKVRhsHZNMl5O9SfaX0l0t5wjdgu4IDzGB8bpnGBBOjGST3rRFVsaaEtI4W6f7g==}
