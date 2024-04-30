@@ -51,7 +51,7 @@ export default function Merch() {
 
   return (
     <section
-      className='flex justify-between h-[200lvh] overflow-hidden bg-neutral-900 relative custom-clip-path [background:radial-gradient(125%_125%_at_50%_10%,#171717_40%,#7c07a8_100%)]'
+      className='flex justify-between h-[200lvh] sm:h-[200vh] overflow-hidden bg-neutral-900 relative custom-clip-path [background:radial-gradient(125%_125%_at_50%_10%,#171717_40%,#7c07a8_100%)]'
       id='merch'
       ref={container}
     >
