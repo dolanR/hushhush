@@ -5,8 +5,6 @@ import '@/styles/globals.css';
 
 import { siteConfig } from '@/constant/config';
 
-import ogImage from './opengraph-image.png';
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -28,9 +26,8 @@ export const metadata: Metadata = {
     siteName: siteConfig.title,
     images: [
       {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height,
+        alt: 'HUSH HUSH Logo',
+        url: '/images/opengraph-image.png',
       },
     ],
     type: 'website',
@@ -42,9 +39,8 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height,
+        alt: 'HUSH HUSH Logo',
+        url: '/images/opengraph-image.png',
       },
     ],
     // creator: '@th_clarence',
