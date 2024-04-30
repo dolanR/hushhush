@@ -37,6 +37,7 @@ export default function HomePage() {
     <main>
       <Head>
         <title>Hush Hush</title>
+        <meta name='darkreader-lock' />
       </Head>
       <Navbar />
       <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />

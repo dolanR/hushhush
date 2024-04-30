@@ -45,6 +45,7 @@ export const metadata: Metadata = {
     ],
     // creator: '@th_clarence',
   },
+
   // authors: [
   //   {
   //     name: 'Theodorus Clarence',
