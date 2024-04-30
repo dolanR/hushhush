@@ -11,7 +11,8 @@ export default function SignupForm({
   const [email, setEmail] = useState<string>('');
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    if (document.getElementById('email')?.getAttribute('value') !== '') return;
+    if (!!document.getElementById('email')?.getAttribute('value') !== null)
+      return;
     email &&
       email.indexOf('@') > -1 &&
       onValidated({
