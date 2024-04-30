@@ -5,6 +5,8 @@ import '@/styles/globals.css';
 
 import { siteConfig } from '@/constant/config';
 
+import ogImage from './opengraph-image.png';
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -24,7 +26,13 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
-    // images: [`${siteConfig.url}/images/og.jpg`],
+    images: [
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height,
+      },
+    ],
     type: 'website',
     locale: 'en_US',
   },
@@ -32,7 +40,13 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
-    // images: [`${siteConfig.url}/images/og.jpg`],
+    images: [
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height,
+      },
+    ],
     // creator: '@th_clarence',
   },
   // authors: [
