@@ -18,7 +18,7 @@ export default function BurgerNav({
   const navItems = ['HOME', 'ABOUT', 'MERCH', 'MUSIC', 'TOUR', 'SIGN-UP'];
   return (
     <nav
-      className={`bg-neutral-950 fixed top-0 w-screen sm:w-1/2 md:w-[40%] h-full z-40 transition-all duration-200 ${
+      className={`bg-neutral-950 fixed top-0 w-screen sm:w-1/2 md:w-[50%] lg:w-[40%] h-full z-40 transition-all duration-200 ${
         isOpen ? 'right-0 opacity-1' : '-right-full opacity-0'
       }`}
     >
@@ -52,42 +52,42 @@ export default function BurgerNav({
             target='_blank'
             className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
-            <FaFacebookF className='text-3xl sm:text-5xl ' />
+            <FaFacebookF className='text-3xl md:text-5xl ' />
           </a>
           <a
             href='https://www.instagram.com/hushhush716/'
             target='_blank'
             className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
-            <FaInstagram className='text-3xl sm:text-5xl ' />
+            <FaInstagram className='text-3xl md:text-5xl ' />
           </a>
           <a
             href='https://www.tiktok.com/@hushhush_pat?_t=8eHf1ijs0v0&_r=1'
             target='_blank'
             className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
-            <FaTiktok className='text-3xl sm:text-5xl  ' />
+            <FaTiktok className='text-3xl md:text-5xl  ' />
           </a>
           <a
             href='https://youtube.com/@hushhush-official4064?si=c_8cLLnoV4N6v9Hx'
             target='_blank'
             className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
-            <FaYoutube className='text-3xl sm:text-5xl ' />
+            <FaYoutube className='text-3xl md:text-5xl ' />
           </a>
           <a
             href='https://open.spotify.com/artist/3rh7nDdkXZf4aUme3SKPNF?si=0ccqBQVeTGev1ATBq2q0FA&utm_medium=share&utm_source=linktree'
             target='_blank'
             className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
-            <FaSpotify className='text-3xl sm:text-5xl ' />
+            <FaSpotify className='text-3xl md:text-5xl ' />
           </a>
           <a
             href='https://music.apple.com/us/artist/hush-hush/1614724552'
             target='_blank'
             className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
-            <FaMusic className='text-3xl sm:text-5xl ' />
+            <FaMusic className='text-3xl md:text-5xl ' />
           </a>
         </div>
       </div>
