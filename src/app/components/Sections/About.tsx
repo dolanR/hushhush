@@ -3,8 +3,10 @@ import React, { useEffect } from 'react';
 import SoundButton from '@/app/components/SoundButton';
 import Word from '@/app/components/Word';
 
-const bio =
-  'We are a 4-piece American post-hardcore band from Buffalo, NY. Our band formed in 2022 from a collection of energetic, fun-loving dudes who met under the careful selection of frontman, Dominic Villa. Taking influences from bands such as Pierce the Veil, Escape the Fate, and old school pop punk bands, our unique brand of entertainment fuses catchy guitar rhythms and melodies with driving bass lines to create a post-hardcore/pop-punk fusion. We always strive to bring a high energy show that will make you want to bop around whilst singing along with every word.';
+const bio = `We are HUSH HUSH, a dynamic 4-piece post-hardcore sensation from Buffalo, NY. 
+Formed in 2022, we blend catchy guitar rhythms and driving bass lines to create a unique fusion of post-hardcore and pop-punk. 
+Taking influence from bands like Pierce the Veil and Senses Fail, our high-energy shows are guaranteed to make you dance and sing along. 
+Join us for an unforgettable experience where passion meets performance.`;
 
 export default function About() {
   const [isMuted, setIsMuted] = React.useState<boolean>(true);
@@ -16,10 +18,8 @@ export default function About() {
   }, []);
 
   return (
-    <section
-      className='h-[200vh] flex justify-center items-center -z-20'
-      id='about'
-    >
+    <section className='h-[200vh] flex justify-center items-center -z-20'>
+      <div id='about' className='absolute top-[160vh]'></div>
       <SoundButton isMuted={isMuted} setIsMuted={setIsMuted} />
       <video
         autoPlay

@@ -11,7 +11,7 @@ import {
 export default function Socials({ className }: { className: string }) {
   return (
     <motion.div
-      className={`lg:flex self-end xl:pb-[] w-full py-6 justify-center text-white items-center gap-6 z-10 hidden ${className}`}
+      className={`lg:flex self-end w-full py-6 justify-center text-white items-center gap-6 z-10 ${className}`}
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ delay: 0.5 }}

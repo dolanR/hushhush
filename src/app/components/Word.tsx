@@ -5,7 +5,7 @@ export default function Words({ value }: { value: string }) {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ['start 0.79', 'start 0.17'],
+    offset: ['start 0.95', 'start 0.35'],
   });
 
   const words = value.split(' ');

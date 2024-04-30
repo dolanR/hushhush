@@ -1,30 +1,37 @@
-import Socials from '@/app/components/Socials';
+import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
 
+import SignupForm from '@/app/components/SignupForm';
+import Socials from '@/app/components/Socials';
 export default function Tour() {
+  const url = `https://gmail.us18.list-manage.com/subscribe/post?u=${process.env.NEXT_PUBLIC_MAILCHIMP_U}&amp;id=${process.env.NEXT_PUBLIC_MAILCHIMP_ID}&amp;f_id=0084c2e1f0`;
+
   return (
     <section
-      className='h-screen flex flex-col md:px-36 px-24 justify-center text-center items-center text-white'
+      className='h-screen flex flex-col md:px-36 sm:px-24 px-2 justify-center text-center items-center text-white'
       id='tour'
     >
-      <h1 className='md:text-9xl text-7xl font-bold'>TOUR INFO COMING SOON</h1>
-      <p className='md:text-3xl text-2xl p-6'>
+      <h1 className='lg:text-9xl md:text-8xl sm:text-7xl text-5xl font-bold'>
+        TOUR INFO COMING SOON
+      </h1>
+      <p className='md:text-3xl sm:text-2xl text-lg pt-6'>
         In the meantime, keep up with us on our socials
       </p>
-      <Socials className='' />
-      <p className='md:text-3xl text-2xl p-6'>
+      <Socials className='flex' />
+      <p className='md:text-3xl sm:text-2xl text-lg pb-6'>
         And sign up for our newsletter!
       </p>
-      <div className='flex flex-row gap-6'>
-        <input
-          type='email'
-          id='email'
-          className='bg-neutral-900 border-white border-[2px] text-white text-sm rounded-md focus:ring-[#7c07a8] focus:border-[#7c07a8] block sm:max-w-[500px] sm:min-w-[300px] p-2.5   bg-opacity-25'
-          placeholder='example@gmail.com'
-          required
+      <div className='flex flex-row gap-6 pb-6'>
+        <MailchimpSubscribe
+          url={url}
+          render={({ subscribe, status }) => (
+            <div className='flex flex-row gap-6'>
+              <SignupForm
+                status={status}
+                onValidated={(formData: EmailFormFields) => subscribe(formData)}
+              />
+            </div>
+          )}
         />
-        <button className='flex items-center justify-center text-white rounded-md bg-transparent border-[2px] font-bold text-xl px-2 hover:border-[#7c07a8]'>
-          Sign up
-        </button>
       </div>
     </section>
   );
