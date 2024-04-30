@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
 
@@ -35,10 +34,6 @@ export default function HomePage() {
 
   return (
     <main>
-      <Head>
-        <title>Hush Hush</title>
-        <meta name='darkreader-lock' />
-      </Head>
       <Navbar />
       <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} />

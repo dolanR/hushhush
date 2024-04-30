@@ -43,15 +43,16 @@ export const metadata: Metadata = {
         url: '/images/opengraph-image.png',
       },
     ],
-    // creator: '@th_clarence',
   },
-
-  // authors: [
-  //   {
-  //     name: 'Theodorus Clarence',
-  //     url: 'https://theodorusclarence.com',
-  //   },
-  // ],
+  other: {
+    'darkreader-lock': 'darkreader-lock',
+  },
+  authors: [
+    {
+      name: 'Dolan Reynolds',
+      url: 'https://dolan.dev',
+    },
+  ],
 };
 
 export default function RootLayout({
