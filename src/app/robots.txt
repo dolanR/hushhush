@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow:
+Sitemap: https://hush-hush.live/sitemap.xml
