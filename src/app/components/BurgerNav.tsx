@@ -55,7 +55,7 @@ export default function BurgerNav({
             <FaFacebookF className='text-3xl sm:text-5xl ' />
           </a>
           <a
-            href='https://instagram.com/hush.hush.theband?igshid=NTc4MTIwNjQ2YQ=='
+            href='https://www.instagram.com/hushhush716/'
             target='_blank'
             className='transition-all duration-300 ease-in-out hover:scale-[1.3]'
           >
