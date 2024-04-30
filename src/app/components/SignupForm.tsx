@@ -34,20 +34,19 @@ export default function SignupForm({
         placeholder='example@gmail.com'
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input type='hidden' value='1' name='group[1][1]' />
+      <input
+        type='text'
+        id='email'
+        autoComplete='off'
+        placeholder='Your e-mail here'
+        className='honey-honey'
+      />
       <button
         type='submit'
         className={`flex items-center justify-center text-white rounded-md bg-transparent border-[2px] font-bold text-xs sm:text-lg md:text-xl px-2 hover:bg-white hover:mix-blend-screen transition-all duration-200 hover:text-black shadow-lg ${
           status === 'success' ? 'hidden' : ''
         }`}
       >
-        <input
-          type='text'
-          id='email'
-          autoComplete='off'
-          placeholder='Your e-mail here'
-          className='honey-honey'
-        />
         Sign Up
       </button>
       <div className='flex justify-center items-center'>
