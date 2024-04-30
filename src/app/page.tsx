@@ -26,6 +26,13 @@ import Tour from '@/app/components/Sections/Tour';
 export default function HomePage() {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
+  React.useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--vh',
+      window.innerHeight * 0.01 + 'px'
+    );
+  }, []);
+
   return (
     <main>
       <Head>

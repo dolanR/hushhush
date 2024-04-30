@@ -23,6 +23,7 @@ export default function About() {
       <SoundButton isMuted={isMuted} setIsMuted={setIsMuted} />
       <video
         autoPlay
+        playsInline
         muted={isMuted}
         loop
         className='fixed top-0 object-cover h-screen w-[120vw] -z-50 opacity-60'
