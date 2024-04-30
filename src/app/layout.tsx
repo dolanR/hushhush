@@ -49,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className='bg-neutral-900 scroll-smooth overflow-x-hidden'>
+    <html className='bg-neutral-900 scroll-smooth overflow-x-hidden overscroll-none'>
       <body>{children}</body>
     </html>
   );
