@@ -11,7 +11,7 @@ export default function Words({ value }: { value: string }) {
   const words = value.split(' ');
   return (
     <p
-      className='font-5xl lg:max-w-[85%] md:max-w-[90%] max-w-[97%] p-12 text-white flex flex-wrap xl:text-5xl lg:text-4xl sm:text-3xl text-base font-bold'
+      className='lg:max-w-[85%] md:max-w-[90%] max-w-[97%] p-12 text-white flex flex-wrap xl:text-5xl lg:text-4xl sm:text-4xl text-base font-bold'
       ref={element}
     >
       &emsp;

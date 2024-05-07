@@ -99,7 +99,7 @@ const Column = ({
             height={500}
             width={500}
             loading='lazy'
-            alt='HUSH HUSH Merch'
+            alt='HUSH HUSH Official Band Merch'
             className='aspect-square'
           />
         </div>
