@@ -18,7 +18,7 @@ export default function BurgerNav({
   const navItems = ['HOME', 'ABOUT', 'MERCH', 'MUSIC', 'TOUR', 'SIGN-UP'];
   return (
     <nav
-      className={`bg-neutral-950 fixed top-0 w-screen sm:w-1/2 md:w-[50%] lg:w-[40%] h-full z-40 transition-all duration-200 ${
+      className={`bg-neutral-950 fixed top-0 w-screen sm:w-1/2 md:w-[50%] lg:w-[40%] h-full z-30 transition-all duration-200 ${
         isOpen ? 'right-0 opacity-1' : '-right-full opacity-0'
       }`}
     >
