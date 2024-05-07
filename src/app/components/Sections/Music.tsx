@@ -52,6 +52,7 @@ export default function Music() {
           href='https://music.apple.com/us/artist/hush-hush/1614724552'
           target='_blank'
           className='p-4 pr-5 rounded-full border-[2px] flex items-center justify-center sm:hover:bg-red-500 sm:hover:scale-[1.5] transition-all duration-200 ease-in-out'
+          title='HUSH HUSH Band on Apple Music'
         >
           <IoIosMusicalNotes />
         </a>

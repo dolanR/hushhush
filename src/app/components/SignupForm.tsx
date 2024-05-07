@@ -11,7 +11,7 @@ export default function SignupForm({
   const [email, setEmail] = useState<string>('');
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    if (!!document.getElementById('email')?.getAttribute('value') !== null)
+    if (!!document.getElementById('email')?.getAttribute('value') === null)
       return;
     email &&
       email.indexOf('@') > -1 &&
@@ -27,7 +27,10 @@ export default function SignupForm({
   }, [status]);
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)} className='flex flex-row gap-6'>
+    <form
+      onSubmit={(e) => handleSubmit(e)}
+      className='flex sm:flex-row gap-6 flex-col'
+    >
       <input
         type='email'
         id='emailjlfk'
@@ -44,7 +47,7 @@ export default function SignupForm({
       />
       <button
         type='submit'
-        className={`flex items-center justify-center text-white rounded-md bg-transparent border-[2px] font-bold text-xs sm:text-lg md:text-xl px-2 hover:bg-white hover:mix-blend-screen transition-all duration-200 hover:text-black shadow-lg ${
+        className={`flex items-center justify-center text-white rounded-md bg-transparent border-[2px] font-bold text-xs sm:text-lg md:text-xl px-2 hover:bg-white hover:mix-blend-screen transition-all duration-200 py-3 sm:py-0 hover:text-black shadow-lg ${
           status === 'success' ? 'hidden' : ''
         }`}
       >

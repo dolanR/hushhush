@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import Socials from '@/app/components/Socials';
+import Socials from '@/app/Components/Socials';
 
 export default function Home() {
   return (
