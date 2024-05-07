@@ -11,8 +11,7 @@ export default function SignupForm({
   const [email, setEmail] = useState<string>('');
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    if (!!document.getElementById('email')?.getAttribute('value') === null)
-      return;
+    if (document.getElementById('email')?.getAttribute('value') !== '') return;
     email &&
       email.indexOf('@') > -1 &&
       onValidated({
@@ -44,6 +43,7 @@ export default function SignupForm({
         autoComplete='off'
         placeholder='Your e-mail here'
         className='honey-honey'
+        value=''
       />
       <button
         type='submit'
