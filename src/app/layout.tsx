@@ -61,10 +61,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className=''>
-      <body className='overflow-x-hidden scroll-smooth bg-neutral-900 '>
-        {children}
-      </body>
+    <html className=' scroll-smooth'>
+      <body className='overflow-x-hidden bg-neutral-900 '>{children}</body>
     </html>
   );
 }

@@ -9,7 +9,7 @@ export default function Hamburger({
 }) {
   return (
     <motion.div
-      className='flex flex-col z-50 items-center justify-center cursor-pointer lg:m-10 fixed p-3 right-0 top-0 sm:m-6 m-2'
+      className='flex flex-col z-40 items-center justify-center cursor-pointer lg:m-10 fixed p-3 right-0 top-0 sm:m-6 m-2'
       onClick={() => setIsOpen(!isOpen)}
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
