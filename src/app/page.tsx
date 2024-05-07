@@ -7,13 +7,13 @@ import '@/lib/env';
 import BurgerNav from '@/app/components/BurgerNav';
 import Hamburger from '@/app/components/Hamburger';
 import Navbar from '@/app/components/Navbar';
-import About from '@/app/components/sections/About';
-import Footer from '@/app/components/sections/Footer';
-import Home from '@/app/components/sections/Home';
-import Merch from '@/app/components/sections/Merch';
-import Music from '@/app/components/sections/Music';
-import SignUp from '@/app/components/sections/SignUp';
-import Tour from '@/app/components/sections/Tour';
+import About from '@/app/components/Sections/About';
+import Footer from '@/app/components/Sections/Footer';
+import Home from '@/app/components/Sections/Home';
+import Merch from '@/app/components/Sections/Merch';
+import Music from '@/app/components/Sections/Music';
+import SignUp from '@/app/components/Sections/SignUp';
+import Tour from '@/app/components/Sections/Tour';
 import SignupModal from '@/app/components/SignupModal';
 
 /**
