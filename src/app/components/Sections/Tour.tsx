@@ -1,7 +1,7 @@
 import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
 
-import SignupForm from '@/app/Components/SignupForm';
-import Socials from '@/app/Components/Socials';
+import SignupForm from '@/app/components/SignupForm';
+import Socials from '@/app/components/Socials';
 export default function Tour() {
   const url = `https://gmail.us18.list-manage.com/subscribe/post?u=${process.env.NEXT_PUBLIC_MAILCHIMP_U}&amp;id=${process.env.NEXT_PUBLIC_MAILCHIMP_ID}&amp;f_id=0084c2e1f0`;
 

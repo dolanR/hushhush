@@ -4,17 +4,17 @@ import { AnimatePresence } from 'framer-motion';
 import * as React from 'react';
 import '@/lib/env';
 
-import BurgerNav from '@/app/Components/BurgerNav';
-import Hamburger from '@/app/Components/Hamburger';
-import Navbar from '@/app/Components/Navbar';
-import About from '@/app/Components/Sections/About';
-import Footer from '@/app/Components/Sections/Footer';
-import Home from '@/app/Components/Sections/Home';
-import Merch from '@/app/Components/Sections/Merch';
-import Music from '@/app/Components/Sections/Music';
-import SignUp from '@/app/Components/Sections/SignUp';
-import Tour from '@/app/Components/Sections/Tour';
-import SignupModal from '@/app/Components/SignupModal';
+import BurgerNav from '@/app/components/BurgerNav';
+import Hamburger from '@/app/components/Hamburger';
+import Navbar from '@/app/components/Navbar';
+import About from '@/app/components/sections/About';
+import Footer from '@/app/components/sections/Footer';
+import Home from '@/app/components/sections/Home';
+import Merch from '@/app/components/sections/Merch';
+import Music from '@/app/components/sections/Music';
+import SignUp from '@/app/components/sections/SignUp';
+import Tour from '@/app/components/sections/Tour';
+import SignupModal from '@/app/components/SignupModal';
 
 /**
  * SVGR Support

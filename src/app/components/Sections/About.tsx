@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import SoundButton from '@/app/Components/SoundButton';
-import Word from '@/app/Components/Word';
+import SoundButton from '@/app/components/SoundButton';
+import Word from '@/app/components/Word';
 
 const bio = `We are HUSH HUSH, a dynamic 4-piece post-hardcore sensation from Buffalo, NY. 
 Formed in 2022, we blend catchy guitar rhythms and driving bass lines to create a unique fusion of post-hardcore and pop-punk. 

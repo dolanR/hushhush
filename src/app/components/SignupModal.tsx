@@ -3,8 +3,8 @@ import React from 'react';
 import { IoClose } from 'react-icons/io5';
 import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
 
-import Backdrop from '@/app/Components/Backdrop';
-import SignupForm from '@/app/Components/SignupForm';
+import Backdrop from '@/app/components/Backdrop';
+import SignupForm from '@/app/components/SignupForm';
 
 export default function SignupModal({
   handleClose,
