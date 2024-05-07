@@ -1,7 +1,6 @@
 'use client';
 
 import { AnimatePresence } from 'framer-motion';
-import { Home, Music } from 'lucide-react';
 import * as React from 'react';
 import '@/lib/env';
 
@@ -10,7 +9,9 @@ import Hamburger from '@/app/components/Hamburger';
 import Navbar from '@/app/components/Navbar';
 import About from '@/app/components/sections/About';
 import Footer from '@/app/components/sections/Footer';
+import Home from '@/app/components/sections/Home';
 import Merch from '@/app/components/sections/Merch';
+import Music from '@/app/components/sections/Music';
 import SignUp from '@/app/components/sections/SignUp';
 import Tour from '@/app/components/sections/Tour';
 import SignupModal from '@/app/components/SignupModal';
