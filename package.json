@@ -1,7 +1,11 @@
 {
-  "name": "ts-nextjs-tailwind-starter",
+  "name": "hush-hush",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Dolan Reynolds",
+    "email": "reynoldsdolan@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
