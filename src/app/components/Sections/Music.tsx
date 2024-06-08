@@ -15,32 +15,44 @@ export default function Music() {
       >
         Check Out Our Music
       </motion.p>
-      <iframe
-        className='rounded-md h-[300px] max-w-[550px] w-[90%]'
-        src='https://open.spotify.com/embed/track/3ygEcUrX3igwOX9trptPE8?utm_source=generator'
-        width='100%'
-        height='352'
-        allowFullScreen
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        loading='lazy'
-      ></iframe>
-      <iframe
-        className='rounded-md h-[300px] max-w-[550px] w-[90%]'
-        src='https://open.spotify.com/embed/track/5pc5KjzYGaR3m0MY6lyGfe?utm_source=generator'
-        width='100%'
-        allowFullScreen
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        loading='lazy'
-      ></iframe>
-      <iframe
-        className='rounded-md h-[300px] max-w-[550px] w-[90%]'
-        src='https://open.spotify.com/embed/track/0fyUXhCYS9kwcTvjvnQIAA?utm_source=generator'
-        width='100%'
-        height='352'
-        allowFullScreen
-        allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
-        loading='lazy'
-      ></iframe>
+      <div className='xl:grid-cols-2 grid-cols-1 lg:w-[1200px] sm:w-[600px] w-full grid place-items-center'>
+        <iframe
+          className='rounded-md h-[300px] max-w-[550px] w-[90%]'
+          src='https://open.spotify.com/embed/track/7fykwweTtJ6vB6ohuee15H?utm_source=generator'
+          width='100%'
+          height='352'
+          frameBorder='0'
+          allowFullScreen
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          loading='lazy'
+        ></iframe>
+        <iframe
+          className='rounded-md h-[300px] max-w-[550px] w-[90%]'
+          src='https://open.spotify.com/embed/track/3ygEcUrX3igwOX9trptPE8?utm_source=generator'
+          width='100%'
+          height='352'
+          allowFullScreen
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          loading='lazy'
+        ></iframe>
+        <iframe
+          className='rounded-md h-[300px] max-w-[550px] w-[90%]'
+          src='https://open.spotify.com/embed/track/5pc5KjzYGaR3m0MY6lyGfe?utm_source=generator'
+          width='100%'
+          allowFullScreen
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          loading='lazy'
+        ></iframe>
+        <iframe
+          className='rounded-md h-[300px] max-w-[550px] w-[90%]'
+          src='https://open.spotify.com/embed/track/0fyUXhCYS9kwcTvjvnQIAA?utm_source=generator'
+          width='100%'
+          height='352'
+          allowFullScreen
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+          loading='lazy'
+        ></iframe>
+      </div>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
