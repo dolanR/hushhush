@@ -33,7 +33,7 @@ export default function SignupForm({
       <input
         type='email'
         id='emailjlfk'
-        className='bg-neutral-900 border-white border-[2px] text-white text-sm rounded-md  sm:max-w-[500px] sm:min-w-[300px] p-2.5 bg-opacity-25'
+        className='bg-neutral-900 border-white border-[2px] text-white text-sm rounded-md sm:max-w-[500px] sm:min-w-[300px] p-2.5 bg-opacity-25 placeholder-neutral-400 focus:border-white focus:ring-0 focus:outline-none'
         placeholder='example@gmail.com'
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -43,11 +43,11 @@ export default function SignupForm({
         autoComplete='off'
         placeholder='Your e-mail here'
         className='honey-honey'
-        value=''
+        defaultValue=''
       />
       <button
         type='submit'
-        className={`flex items-center justify-center text-white rounded-md bg-transparent border-[2px] font-bold text-xs sm:text-lg md:text-xl px-2 hover:bg-white hover:mix-blend-screen transition-all duration-200 py-3 sm:py-0 hover:text-black shadow-lg ${
+        className={`flex items-center justify-center text-white rounded-md bg-transparent border-[2px] font-bold text-xs sm:text-lg md:text-xl px-2 hover:bg-white hover:mix-blend-screen transition-all duration-200 py-3 sm:py-0 hover:text-black shadow-lg border-white ${
           status === 'success' ? 'hidden' : ''
         }`}
       >

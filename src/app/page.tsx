@@ -12,7 +12,7 @@ import Footer from '@/app/components/Sections/Footer';
 import Home from '@/app/components/Sections/Home';
 import Merch from '@/app/components/Sections/Merch';
 import Music from '@/app/components/Sections/Music';
-import SignUp from '@/app/components/Sections/SignUp';
+import Newsletter from '@/app/components/Sections/Newsletter';
 import Tour from '@/app/components/Sections/Tour';
 import SignupModal from '@/app/components/SignupModal';
 
@@ -63,7 +63,8 @@ export default function HomePage() {
       <Merch />
       <Music />
       <Tour />
-      <SignUp />
+      <Newsletter />
+
       <Footer />
     </main>
   );

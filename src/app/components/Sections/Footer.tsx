@@ -3,7 +3,7 @@ import Socials from '@/app/components/Socials';
 export default function Footer() {
   return (
     <footer
-      className='py-12 bg-neutral-900 custom-clip-path-4 flex flex-col items-center justify-center text-white text-center sm:gap-6 gap-3'
+      className='py-12 bg-neutral-900 custom-clip-path-4 flex flex-col items-center justify-center text-white text-center sm:gap-4 gap-3'
       id='footer'
     >
       <Socials className='flex' />
